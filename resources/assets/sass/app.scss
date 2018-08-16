@@ -1,0 +1,306 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+#loader {
+  bottom: 0;
+  height: 175px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 175px;
+}
+#loader {
+  bottom: 0;
+  height: 175px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 175px;
+}
+#loader .dot {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 87.5px;
+}
+#loader .dot::before {
+  border-radius: 100%;
+  content: "";
+  height: 87.5px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(0);
+  width: 87.5px;
+}
+#loader .dot:nth-child(7n+1) {
+  transform: rotate(45deg);
+}
+#loader .dot:nth-child(7n+1)::before {
+  animation: 0.8s linear 0.1s normal none infinite running load;
+  background: #00ff80 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+2) {
+  transform: rotate(90deg);
+}
+#loader .dot:nth-child(7n+2)::before {
+  animation: 0.8s linear 0.2s normal none infinite running load;
+  background: #00ffea none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+3) {
+  transform: rotate(135deg);
+}
+#loader .dot:nth-child(7n+3)::before {
+  animation: 0.8s linear 0.3s normal none infinite running load;
+  background: #00aaff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+4) {
+  transform: rotate(180deg);
+}
+#loader .dot:nth-child(7n+4)::before {
+  animation: 0.8s linear 0.4s normal none infinite running load;
+  background: #0040ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+5) {
+  transform: rotate(225deg);
+}
+#loader .dot:nth-child(7n+5)::before {
+  animation: 0.8s linear 0.5s normal none infinite running load;
+  background: #2a00ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+6) {
+  transform: rotate(270deg);
+}
+#loader .dot:nth-child(7n+6)::before {
+  animation: 0.8s linear 0.6s normal none infinite running load;
+  background: #9500ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+7) {
+  transform: rotate(315deg);
+}
+#loader .dot:nth-child(7n+7)::before {
+  animation: 0.8s linear 0.7s normal none infinite running load;
+  background: magenta none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+8) {
+  transform: rotate(360deg);
+}
+#loader .dot:nth-child(7n+8)::before {
+  animation: 0.8s linear 0.8s normal none infinite running load;
+  background: #ff0095 none repeat scroll 0 0;
+}
+#loader .lading {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  bottom: -40px;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 180px;
+}
+@keyframes load {
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes load {
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: .7;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.container {
+  font-family: Ubuntu;
+}
+
+.min-text {
+  font-size: 12px;
+  color: #818991
+}
+
+.theme-video-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  transform: translateZ(0px);
+}
+
+.page-title {
+  color: #fff;
+  font-size: 26px;
+  margin: 0;
+  padding: 21px 0 21px 40px;
+  font-family: Ubuntu;
+}
+
+.post-list {
+  width: 100%;
+}
+
+.post-list .mdl-card {
+  width: unset;
+  margin-bottom: 20px;
+}
+
+.post-list .mdl-card__title {
+  height: 200px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(255,64,129);
+}
+
+.post-list .mdl-card__actions.mdl-card--border {
+  border-top: 1px solid rgb(255,64,129);
+}
+
+.post-list .material-icons, .post-list .mdl-button {
+  color: rgb(255,64,129);
+}
+
+.post-list .mdl-card__title-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mdl-layout-title {
+  color: #fff;
+  font-size: 26px;
+  margin: 0;
+  font-family: Ubuntu;
+}
+
+.mdl-layout-title .b24-title {
+  color: #2fc6f7;
+}
+
+.user-post-avatar {
+  border-radius: 50%;
+  display: block;
+  float: left;
+  height: 100px;
+  margin-right: 11px;
+  overflow: hidden;
+  width: 100px;
+}
+
+.post-user {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination li {
+  margin-right: 5px;
+}
+
+.mdl-cell .mdl-card__title{
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgb(255,64,129);
+}
+
+.mdl-cell .mdl-card__title-text {
+  height: 60px;
+  padding: 10px;
+}
+
+.mdl-cell .mdl-button{
+  color: rgb(255,64,129);
+}
+
+.mdl-cell .mdl-card__actions.mdl-card--border {
+  border-top: 1px solid rgb(255,64,129);
+}
+
+.py-4 .navbar-nav a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.py-4 .navbar-nav a.active {
+  color: rgb(255,64,129);
+  text-decoration: underline;
+}
+
+.mdl-layout__header-row .mdl-navigation__link.active {
+  color: rgb(255,64,129);
+  text-decoration: underline;
+}
+
+.user-block {
+  width: 100%;
+  display: flex;
+}
+
+.user-block__photo {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+}
+
+.user-block__photo img {
+  width: 100%;
+}
+
+.user-block__desc {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.user-info {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(255,64,129);
+}
+
+.deal-detail .mdl-card__title{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.deal-detail .mdl-card__supporting-text img {
+  width: 100px;
+}
