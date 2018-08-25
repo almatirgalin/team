@@ -49,7 +49,7 @@
 @if (\Illuminate\Support\Facades\Request::is('workers')) active @endif">Сотрудники</a>
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        @guest
+                        {{--@guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Логин') }}</a>
                             </li>
@@ -76,7 +76,7 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                        @endguest--}}
                     </ul>
                 </nav>
             </div>

@@ -31,14 +31,18 @@
                                         Контакт: {{ $company->contact->last_name }} {{ $company->contact->name }}</div>
                                 @endif
                             <td>
+                                @if ($company->createdBy)
                                 <div>{{ $company->createdBy->last_name }} {{ $company->createdBy->name }}</div>
                                 <div><img src="{{ $company->createdBy->photo }}" class="img-thumbnail img-fluid"
                                           style="width: 50px;"/></div>
+                                @endif
                             </td>
                             <td>
+                                @if ($company->assignedBy)
                                 <div>{{ $company->assignedBy->last_name }} {{ $company->assignedBy->name }}</div>
                                 <div><img src="{{ $company->assignedBy->photo }}" class="img-thumbnail img-fluid"
                                           style="width: 50px;"/></div>
+                                @endif
                             </td>
                             <td>{{ $company->date_create ? $company->date_create->format('d.m.y') : '' }}</td>
                         </tr>

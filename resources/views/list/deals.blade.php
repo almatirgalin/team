@@ -36,14 +36,18 @@
                                     <div class="min-text">Компания: {{ $deal->company->title }}</div>
                                 @endif</td>
                             <td>
+                                @if ($deal->createdBy)
                                 <div>{{ $deal->createdBy->last_name }} {{ $deal->createdBy->name }}</div>
                                 <div><img src="{{ $deal->createdBy->photo }}" class="img-thumbnail img-fluid"
                                           style="width: 50px;"/></div>
+                                @endif
                             </td>
                             <td>
+                                @if ($deal->assignedBy)
                                 <div>{{ $deal->assignedBy->last_name }} {{ $deal->assignedBy->name }}</div>
                                 <div><img src="{{ $deal->assignedBy->photo }}" class="img-thumbnail img-fluid"
                                           style="width: 50px;"/></div>
+                                @endif
                             </td>
                             <td>{{ $deal->opportunity }}</td>
                             <td>{{ $deal->date_create ? $deal->date_create->format('d.m.y') : '' }}</td>

@@ -1,6 +1,6 @@
 <?php
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/', 'PageController@index');
 Route::get('post/{id}', 'PageController@post');

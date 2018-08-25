@@ -32,7 +32,7 @@
                         </div>
 
                         <div class="mdl-card__supporting-text">
-                            {!! str_replace(\PheRum\BBCode\Facades\BBCode::parse(substr($post->message, 0, 1000)), '[B]', '<b>') !!} ...
+                            {!! substr(\PheRum\BBCode\Facades\BBCode::parse($post->message), 0, 1000) !!} ...
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
                             <a href="{{ url('post', $post->post_id) }}" class="mdl-button mdl-js-button mdl-js-ripple-effect">
