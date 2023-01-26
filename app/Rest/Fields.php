@@ -106,6 +106,7 @@ class Fields
             'last_name'   => 'LAST_NAME',
             'second_name' => 'SECOND_NAME',
             'birth_date'  => 'PERSONAL_BIRTHDAY',
+            'register_date'  => 'DATE_REGISTER',
             'photo'       => 'PERSONAL_PHOTO',
             'position'    => 'WORK_POSITION',
             'skills'      => 'UF_SKILLS',

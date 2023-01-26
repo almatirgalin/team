@@ -39,6 +39,17 @@
                               &nbsp;
                           @endif
                           </div>
+                          <div>
+                              @if (!empty($worker->register_date))
+                                  Дата регистрации: {{ \Carbon\Carbon::createFromTimeString($worker->register_date)
+                                       ->format('d.m.Y')}}
+                              @endif
+                          </div>
+                          <div>
+                              @if (!empty($worker->position))
+                                  Должность: {{ $worker->position }}
+                              @endif
+                          </div>
                       </div>
                       <div class="mdl-card__actions mdl-card--border">
                           <a href="{{ url('worker', $worker->worker_id) }}" class="mdl-button mdl-js-button mdl-js-ripple-effect">

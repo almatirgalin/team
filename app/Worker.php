@@ -20,6 +20,7 @@ class Worker extends Model
             'last_name',
             'second_name',
             'birth_date',
+            'register_date',
             'photo',
             'position',
             'skills',
@@ -50,7 +51,7 @@ class Worker extends Model
 
     public function setBirthDateAttribute($value)
     {
-        if ($value == '' || substr($value, 0, 4) < 1970) {
+        if ($value == '' || substr($value, 0, 4) <= 1970) {
             $this->attributes['birth_date'] = null;
         } else {
             $date = substr($value, 0, 10);

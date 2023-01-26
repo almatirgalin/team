@@ -36,6 +36,12 @@
                     @if($worker->interests)
                         <div class="user-info">Интересы: {{ $worker->interests }}</div>
                     @endif
+                        <div>
+                            @if (!empty($worker->register_date))
+                                Дата регистрации: {{ \Carbon\Carbon::createFromTimeString($worker->register_date)
+                                       ->format('d.m.Y')}}
+                            @endif
+                        </div>
                 </div>
             </div>
     </div>
